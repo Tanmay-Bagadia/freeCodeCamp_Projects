@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="center">Survey Form</h1>
+        <p id="description" class="center">
+          This form is to get to know the interests of the people.
+        </p>
+      </header>
+      <form action="" id="survey-form">
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="age" id="number-label">Age</label>
+          <input
+            type="number"
+            class="form-control"
+            placeholder="Enter your age"
+            id="number"
+            min="0"
+            max="99"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <select name="cars" id="dropdown" class="form-control" required>
+            <option disabled selected value>Select your favourite car</option>
+            <option value="volvo">Volvo</option>
+            <option value="tesla">Tesla</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What do you do more often?</p>
+          <label>
+            <input
+              type="radio"
+              class="radio"
+              checked
+              name="game"
+              value="mobile-gaming"
+            />
+
+            Mobile Gaming</label
+          >
+          <label>
+            <input type="radio" class="radio" name="game" value="pc-gaming" />
+
+            PC Gaming</label
+          >
+          <label>
+            <input
+              type="radio"
+              class="radio"
+              name="game"
+              value="console-gaming"
+            />
+
+            Console Gaming</label
+          >
+          <label>
+            <input type="radio" class="radio" name="game" value="other" />
+
+            Other</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Select the options which you like more</p>
+          <label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="user-choice"
+              value="travel"
+              checked
+            />
+            Travelling</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="user-choice"
+              value="playing"
+            />
+            Playing</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="user-choice"
+              value="competitions"
+            />
+            Competitions</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="user-choice"
+              value="food"
+            />
+            Food Blogging</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="user-choice"
+              value="vlogging"
+            />
+            Vlogging</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              class="checkbox"
+              name="user-choice"
+              value="other"
+            />
+            Other</label
+          >
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

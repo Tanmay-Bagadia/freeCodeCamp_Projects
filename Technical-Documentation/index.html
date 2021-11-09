@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <nav id="navbar">
+      <header>
+        <ul>
+          <li>
+            <a href="#Introduction" class="nav-link">Introduction</a>
+          </li>
+          <li>
+            <a href="#Installing_Python_and_PyCharm" class="nav-link">Installing Python and PyCharm</a>
+          </li>
+          <li>
+            <a href="#Hello_World" class="nav-link">Hello World</a>
+          </li>
+          <li>
+            <a href="#COMMENTS,_ESCAPE_SEQUENCES_and_PRINT_STATEMENT" class="nav-link">Comments, Escape sequences and print statement</a>
+          </li>
+          <li>
+            <a href="#VARIABLES_,_DATATYPES_and_TYPECASTING" class="nav-link">Variables , Datatypes and Typecasting</a>
+          </li>
+          <li>
+            <a href="#Reference" class="nav-link">Reference</a>
+          </li>
+        </ul>
+      </header>
+    </nav>
+
+    <!-- Main -->
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Python is a cross-platform programming language, which means that it
+            can run on multiple platforms like Windows, macOS, Linux, and has
+            even been ported to the Java and .NET virtual machines. It is free
+            and open-source. Even though most of today's Linux and Mac have
+            Python pre-installed in it, the version might be out-of-date. So, it
+            is always a good idea to install the most current version.
+          </p>
+          </article>
+      </section>
+          <section class="main-section" id="Installing_Python_and_PyCharm">
+            <header>Installing Python and PyCharm</header>
+            <article>
+          <p>
+            we'll download and install Python as well as an IDE called PyCharm.
+            First of all, let's head to Python's official website and download
+            Python:
+            <ol>
+            <li>
+              Go to this link -
+              <a href="https://www.python.org/downloads/" target="_blank">
+                https://www.python.org/downloads/</a
+              >
+            </li>
+            <li>From the above link, download the latest version of Python.</li>
+            <li>
+              After visiting this link, click on the "Download Python" button.
+            </li>
+            <li>Your download will start as soon as you click the button.</li>
+          </ol>
+            We downloaded Python but why do we need to download PyCharm IDE and
+            what is PyCharm IDE?
+          </p>
+          <p>
+            PyCharm is one of the best Integrated Development Environments
+            (IDEs) for Python Language developed by the Czech company JetBrains.
+            To download PyCharm, follow the steps below:
+            <ol>
+            <li>
+              Go to this link -
+              <a
+                href="https://www.jetbrains.com/PyCharm/download/"
+                target="_blank"
+              >
+                https://www.jetbrains.com/PyCharm/download/</a
+              >
+            </li>
+            <li>After visiting the above link, download the community version of PyCharm.</li>
+            <li>
+              Click on the community button to download it.
+            </li>
+            <li>Your download will start.</li>
+          </ol>
+          After that, install it like any other software. After installing both Python and PyCharm, open the terminal (Powershell), and then type 'python' and press Enter.
+
+          You should see the output like this.
+          <img src="https://api.codewithharry.com/media/videoSeriesFiles/courseFiles/python-tutorials-for-absolute-beginners-2/1.jpg" alt="">
+          Note: If you are getting this or similar error - "The term 'pip' is not recognized as the name of a cmdlet, function, or operable program," watch this video here - <a href="https://youtu.be/xdj0mGmuNjc" target="_blank">https://youtu.be/xdj0mGmuNjc</a>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <article>
+          <p>Let's get to business and start writing our first python program. Follow the below steps:
+            <ol>
+              <li>Open PyCharm and create a new file in it.
+              </li>
+              <li>Keep in mind the file name should not match any module name.
+              </li>
+              <li>After creating a new file, type:
+                <code>print("Hello World")</code>
+              </li>
+              <li>Now run your program.</li>
+              <li>You will get the output as "Hello World" in your terminal.
+              </li>
+            </ol>
+            So, this is our first python program, and in this program, we just used the print function. In this function, whatever we pass in parenthesis () in a double quote or single quote gets printed (as it is) in the terminal.
+          </p>
+        </article>
+      </section>
+     
+      <section class="main-section" id="COMMENTS,_ESCAPE_SEQUENCES_and_PRINT_STATEMENT">
+        <header>Comments, escape sequences and print statement </header>
+        <article>
+          <p>Comments are used to write something which the programmer does not want to execute. Comments can be written to mark the author's name, date when the program is written, adding notes for your future self, etc.
+
+            In Short, Comments are used to make the code more understandable for the programmer.
+            The Interpreter does not execute comments.
+          </p>
+          <p>
+            There are two types of comments in Python Language -:
+
+            <li>Single Line Comment</li>
+
+            <li>Multiline Comment</li> 
+          </p>
+          <p>
+            <strong>Single Line Comment:</strong> Single Line comments are the comments which are written in a single line, i.e., they occupy the space of a single line.
+            <li>We use # (hash/pound to write single-line comments).</li>
+            <li>E.g., the below program depicts the usage of comments.</li>
+            <code>//This is a comment <br>
+              name = tanmay<br>
+              //the above line is not a comment but this line is  a comment
+            </code>
+            <strong>Multiline Comment:</strong> Multi-Line Comment: Multi-Line comments are the comments which are created by using multiple lines, i.e., they occupy more than one line in a program.
+            <li>We use ' ' '….. Comment ….' ' ' for writing multi-line comments in Python (Use lines enclosed with three quotes for writing multi-line comments). An example of a multi-line comment is shown below:</li>
+            <code>'''This is a comment <br>
+            Written by tanmay'''<br>
+           '''My code starts from here'''<br>
+          import os</code>
+          </p>
+          
+          <p>
+            <h1>Print statement</h1>
+            print() is a function in Python that allows us to display whatever is written inside it. In case an operation is supplied to print, the value of the expression after the evaluation is printed in the terminal. For example,
+
+            <code>print("Hello World")</code>
+            <strong>end:</strong> end argument allows us to put something at the end of the line after it is printed. In simple words, it allows us to continue the line with " " or ',' or anything we want to put inside these quotes of the end.
+It simply joins two different print statements using some string or even by space. Example:
+<code>#print statement for strings<br>
+  print("Hello World", end="**")<br>
+  # Print statement with a literal<br>
+  print(1+87)<br>
+#This will give output as : "Hello World**88" on the screen</code>
+          </p>
+          <p>
+        Escape Sequences :
+        An Escape Sequence character in Python is a sequence of characters that represents a single character.
+        It doesn't represent itself when used inside string literal or character.
+        It is composed of two or more characters starting with backslash \ but acts as a single character. Example \n depicts a new line character.
+        Some more examples of escape sequence characters are shown below:
+
+          <table border="1">
+            <tbody>
+            <tr>
+            <td><strong>Escape Sequences</strong></td>
+            <td><strong>Description&nbsp;</strong></td>
+            </tr>
+            <tr>
+            <td>\n&nbsp;</td>
+            <td>Inserts a new line in the text at the point</td>
+            </tr>
+            <tr>
+            <td>\\</td>
+            <td>Inserts a backslash character in the text at the point</td>
+            </tr>
+            <tr>
+            <td>\"</td>
+            <td>
+            <p>Inserts a double quote character in the text at that point</p>
+            </td>
+            </tr>
+            <tr>
+            <td>\'</td>
+            <td>Inserts a single quote character in the text at that point</td>
+            </tr>
+            <tr>
+            <td>\t</td>
+            <td>
+            <p>Inserts a tab in the text at that point</p>
+            </td>
+            </tr>
+            <tr>
+            <td>\f</td>
+            <td>Inserts a form feed ln the text at that point</td>
+            </tr>
+            <tr>
+            <td>\r</td>
+            <td>
+            <p>Inserts a carriage return in the text at that point</p>
+            </td>
+            </tr>
+            <tr>
+            <td>\b</td>
+            <td>Inserts a backspace in the text at that point</td>
+            </tr>
+            </tbody>
+            </table>
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="VARIABLES_,_DATATYPES_and_TYPECASTING">
+        <header>Variables , Datatypes and Typecasting</header>
+        <article>
+          <p>
+            <h1>Variable:</h1>
+            A variable is a name given to any storage area or memory location in a program.
+
+In simple words, we can say that a variable is a container that contains some information, and whenever we need that information, we use the name of that container to access it. Let's create a variable:
+<code>
+  a = 34 # Variable storing an integer<br>
+b = 23.2 # Variable storing real number
+</code>
+Here a and b are variables, and we can use a to access 34 and b to access 23.2. We can also overwrite the values in a and b
+          </p>
+          <p>
+            <h1>Data Types in Python:</h1>
+            Primarily there are the following data types in Python.
+            <ol>
+              <li>Integers (&lt;class 'int'&gt;): Used to store integers</li>
+              <li>Floating point numbers (&lt;class 'float'&gt;): Used to store decimal or floating-point numbers</li>
+              <li>Strings (&lt;class 'str'&gt;): Used to store strings</li>
+              <li>Booleans (&lt;class 'bool'&gt;): Used to store True/False type values</li>
+              <li>None: None is literal to describe 'Nothing' in Python&nbsp;</li>
+              </ol>
+          </p>
+          <p>
+            <h1>Rules for defining a variable</h1>
+            <ul>
+              <li>A variable name can contain alphabets, digits, and underscores (_). For E.g. : demo_xyz = ‘It’s a string variable’</li>
+              <li>A variable name can only start with an alphabet and underscore.</li>
+              <li>It can't start with a digit. For example, <em>5harry </em>is illegal and not allowed.</li>
+              <li>No white space is allowed to be used inside a variable name.</li>
+              <li>Also, reserved keywords are not recommended to be used as variable names.</li>
+              </ul>
+          </p>
+          <p>Examples of few valid variable names are <em>harry</em>, <em>_demo</em>, <em>de_mo</em>, etc.</p>
+          <p>Python is a fantastic language that automatically identifies the type of data for us. It means we need to put some data in a variable, and Python automatically understands the kind of data a variable is holding. Cool, isn't it?</p>
+          <code>
+            # Variable in Python:<br>
+abc = "It's a string variable"<br>
+_abcnum = 40 # It is an example of int variable<br>
+abc123 = 55.854 # It is an example of float variable<br>
+print(_abcnum + abc123) # This will give sum of 40 + 55.854<br>
+          </code>
+          <p>
+            <strong> type() Function in Python:</strong> type() function is a function that allows a user to find data type of any variable. It returns the data type of any data contained in the variable passed to it.
+Have a look at the code below, which depicts the use of type function:
+          </p>
+          <code>
+            # type() Function in Python: <br>
+harry = "40" <br>
+demo = 55.5 <br>
+demo = 40 <br>
+print (type(harry)) #It will give output as string type <br>
+demo3 = type(demo) #It will return data type as float <br>
+print(demo3) #It will print that data type <br>
+print(type(demo2)) #It will give output as int type  <br>
+          </code>
+          <p>Note – We can't do numbers with strings arithmetic operations, i.e., we can't add a string to any number. Have a look at the example below:</p>
+          <code>
+            var1 = "My Name is "<br>
+var2 = "Harry"<br>
+var3 = var1+var2+" & I am a Good Boy."<br>
+print(var1+var2) # It will give output 'My Name is Harry'<br>
+print(var3) <br>
+          </code>
+          <p>
+            <h1>Typecasting:</h1>
+            Typecasting is the way to change one data type of any data or variable to another datatype, i.e., it changes the data type of any variable to some other data type.
+
+ 
+          </p>
+          <p>Suppose there is a string "34" Note: String is not integer since it is enclosed in double-quotes) and as we know, we can't add this to an integer number, let's say 6. But to do so, we can typecast this string to int data type, and then we can add 34+6 to get the output as 40. Have a look at the program below:</p>
+          <code>
+            # Typecasting in Python : <br>
+abc = 5 <br>
+abc2 = '45'<br>
+abc3 = 55.95 <br>
+xyz = 5.0 <br>
+abc4=int(abc2) <br>
+
+print(abc+abc4) # Output : 50 <br>
+print(abc+int(abc2)) # Output : 50 <br>
+
+print(float(abc)+xyz) # It will add 5.0 + 5.0 and will return 10.0<br>
+
+print(str(abc)+45) # It will give an error as abc has been changed into string.<br>
+          </code>
+          <p>There are many functions to convert one data type into another type :</p>
+          <p>str() – this function allows us to convert some other data type into a string.</p>
+          <p>int() – this function allows us to convert some other data type into an integer. For example, str("34") returns 34 which is of type integer (int)</p>
+          <p>float() – this function allows us to convert some other data type into a floating-point number, i.e., a number with decimals.</p>
+          <p><strong>input() Function – </strong>This function allows the user to receive input from the keyboard into the program as a string.</p>
+          <p>input() function always takes input as a string, i.e., if we ask the user to take a number as input, even then, it will take it as a string, and we will have to typecast it into another data type as per the use case.<br>If you enter 45 when the input() is called, you will get "45" as a string</p>
+          <code>
+            # Input Function in Python: <br>
+print("Enter your name : ")<br>
+name = input() #It will take input from user<br>
+print(Your Name is",name) # It will show the name <br>
+xyz = input(Enter your age : ")<br>
+print("Your age is ",xyz)<br>
+
+          </code>
+
+        </article>
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <p>All the data in this page has been taken from <a href="https://www.codewithharry.com/videos/python-tutorials-for-absolute-beginners-1">codeWithHarry</a></p>
+        </article>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
